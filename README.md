@@ -16,7 +16,7 @@ The concept of backpropagation has been around since the 1970s, but it was the s
 
 Partial derivatives quantify how a slight change in a weight affects the loss. Understanding this relationship is key to directing weight adjustments for loss reduction.
 
-![Backpropagation Process]([backpropagation.png](https://github.com/Futurecodemaster/Article/blob/main/%20backpropagation.png?raw=true))
+![Backpropagation Process](https://github.com/Futurecodemaster/Article/blob/main/%20backpropagation.png?raw=true)
 
 ### The diagram above illustrates the backpropagation process in a neural network
 
