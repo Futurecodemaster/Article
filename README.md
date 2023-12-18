@@ -97,7 +97,7 @@ Since its inception, various improvements have been made to the basic backpropag
 
 Backpropagation is the driving force behind many modern AI applications. From the facial recognition systems in smartphones to language translation services, the algorithm’s ability to train complex neural networks has led to significant breakthroughs in numerous fields.
 
-#### An example demonstrating a simple neural network trained on a hypothetical dataset:
+## An example demonstrating a simple neural network trained on a hypothetical dataset:
 
 ```
 import tensorflow as tf
