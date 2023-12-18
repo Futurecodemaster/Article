@@ -18,7 +18,7 @@ Partial derivatives quantify how a slight change in a weight affects the loss. U
 
 ![Backpropagation Process](https://github.com/Futurecodemaster/Article/blob/main/%20backpropagation.png?raw=true)
 
-### The diagram above illustrates the backpropagation process in a neural network
+**The diagram above illustrates the backpropagation process in a neural network**
 
 **Input Layer:** This is the first layer of the neural network where the input data is fed into the system. Each neuron in this layer represents a feature of the input data.
 
