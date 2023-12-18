@@ -29,5 +29,5 @@ Now, let's break down the steps of backpropagation:
 
 Forward Pass
 In this phase, the input data is fed into the neural network. The process involves:
-1.	Layer Calculations: Each layer of the network computes its output based on the inputs and the current weights. Mathematically, for a layer �l, the output �(�)y(l) is calculated as y^{(l)} = f(W^{(l)} \cdot x^{(l)} + b^{(l)})
+1.	Layer Calculations: Each layer of the network computes its output based on the inputs and the current weights. Mathematically, for a layer �l, the output �(�)y(l) is calculated as $y^{(l)} = f(W^{(l)} \cdot x^{(l)} + b^{(l)})$
 
