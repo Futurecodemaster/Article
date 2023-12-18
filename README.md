@@ -200,6 +200,8 @@ References:
 
 https://hmkcode.com/ai/backpropagation-step-by-step/
 
+https://medium.com/@ppuneeth73/the-chain-rule-of-calculus-the-backbone-of-deep-learning-backpropagation-9d35affc05e7
+
 
 
 
