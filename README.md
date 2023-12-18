@@ -58,6 +58,11 @@ $\frac{\partial L}{\partial W_{ij}^{(hidden)}} = \frac{\partial L}{\partial \hat
 
 $\frac{\partial L}{\partial \hat{y}}:$ Gradient of loss with respect to the network's output.
 
+$\frac{\partial \hat{y}}{\partial y^{(hidden)}}:$ Gradient of the output layer with respect to the output of the hidden layer.
+
+$\frac{\partial y^{(hidden)}}{\partial W_{ij}^{(hidden)}}:$ Gradient of the hidden layer's output with respect to its weights.
+
+
 
 
 
