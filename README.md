@@ -98,9 +98,9 @@ Since its inception, various improvements have been made to the basic backpropag
 Backpropagation is the driving force behind many modern AI applications. From the facial recognition systems in smartphones to language translation services, the algorithm’s ability to train complex neural networks has led to significant breakthroughs in numerous fields.
 
 # Neural Network Structure
-1. Input Layer: 1 neuron (x)
-2. Hidden Layer: 2 neurons (h1, h2)
-3. Output Layer: 1 neuron (y)
+1. Input Layer: $1 neuron (x)$
+2. Hidden Layer: $2 neurons (h1, h2)$
+3. Output Layer: $1 neuron (y)$
 
 ## Initial Weights and Biases
 - Weights: $w1 = 0.15, w2 = 0.20, w3 = 0.25, w4 = 0.30$
