@@ -139,13 +139,15 @@ To update the weights, we need to calculate the gradient of the loss with respec
    - $\frac{\partial L}{\partial w3} ≈0.674⋅0.588⋅0.684⋅(1−0.684)$
 
 ### Update Weights:
-- For example, $w3 = w3 - \text{learning_rate} \cdot \frac{\partial L}{\partial w3}$
-- Assume a learning rate of 0.5 for simplicity.
-- $w3 = w3 - \text{learning_rate} \cdot \frac{\partial L}{\partial w3}$
+- For example, $w3 = w3 - \text{learning rate} \cdot \frac{\partial L}{\partial w3}$
+- Assuming a learning rate of 0.5 for simplicity.
 - $w3=0.25−0.5⋅[calculated gradient]$
 
+We would repeat similar calculations for w1, w2, and w4.
 
-## An example demonstrating a simple neural network trained on a hypothetical dataset:
+This completes the backpropagation process for one iteration. In practice, we would repeat this process over many iterations (epochs) to gradually reduce the loss and improve the model's predictions.
+
+## Example code demonstrating a simple neural network trained on a hypothetical dataset:
 
 ```
 import tensorflow as tf
@@ -154,13 +156,10 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 ```
 
-**TensorFlow:** A powerful library for numerical computation, particularly well-suited for large-scale machine learning.
-
-**Dense:** A layer module in Keras (part of TensorFlow) that represents a fully connected neural network layer.
-
-**Sequential:** A Keras model that represents a linear stack of layers.
-
-**Adam:** An optimizer in Keras, a variant of the gradient descent algorithm, known for its effectiveness in practice.
+**TensorFlow:** A powerful library for numerical computation, particularly well-suited for large-scale machine learning.  
+**Dense:** A layer module in Keras (part of TensorFlow) that represents a fully connected neural network layer.  
+**Sequential:** A Keras model that represents a linear stack of layers.   
+**Adam:** An optimizer in Keras, a variant of the gradient descent algorithm, known for its effectiveness in practice.   
 
 
 ```
@@ -213,15 +212,13 @@ model.fit(X, y, epochs=100, verbose=0)
 
 ```
 
-**Fit:** 
-- This function trains the model for a fixed number of epochs (iterations on a dataset).
+**Fit:** This function trains the model for a fixed number of epochs (iterations on a dataset).
 
 **Epochs:** 
 - We train the model for 100 epochs. 
 - In each epoch, the model iterates over the entire dataset, and the optimizer adjusts the weights using backpropagation.
 
-**verbose=0:** 
-- This simply means no training log is shown during training.
+**verbose=0:** This simply means no training log is shown during training.
 
 ```
 weights, biases = model.layers[0].get_weights()
