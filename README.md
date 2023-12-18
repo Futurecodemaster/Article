@@ -23,11 +23,12 @@ For a given layer {(l)}, the output y^{(l)} can be represented as:
 $$y^{(l)} = f(W^{(l)} \cdot x^{(l)} + b^{(l)})$$   
 
 $W^{(l)}$: Weights of layer ${(l)}$  
-$x^{(l)}$: Input to layer ${(l)}$  
-$b^{(l)}$: Biases of layer ${(l)}$   
-$f$: Activation function (e.g., ReLU, sigmoid)  
-![image](https://github.com/Futurecodemaster/Article/assets/25801618/277d2ce0-8a85-4fad-9699-e8f91fce6e49)
 
+$x^{(l)}$: Input to layer ${(l)}$  
+
+$b^{(l)}$: Biases of layer ${(l)}$   
+
+$f$: Activation function (e.g., ReLU, sigmoid)  
 
 3.	Compute Loss:
 •	The loss is calculated using the loss function, comparing the network's output to the actual target value.
