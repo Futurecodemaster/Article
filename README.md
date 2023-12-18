@@ -80,6 +80,8 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 
+
+
 **TensorFlow:** A powerful library for numerical computation, particularly well-suited for large-scale machine learning.
 
 **Dense:** A layer module in Keras (part of TensorFlow) that represents a fully connected neural network layer.
