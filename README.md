@@ -89,11 +89,11 @@ Now, let's break down the steps of backpropagation:
 
    Where $\alpha:$ is the learning rate, a small positive number that controls the size of the weight updates.
 
-## Variants and Improvements
+## Improvements
 
 Since its inception, various improvements have been made to the basic backpropagation algorithm. Stochastic gradient descent, for example, updates weights using a subset of data, enhancing efficiency and convergence. Other notable advancements include adaptive learning rate techniques like Adam and RMSprop, which adjust the learning rate during training for better performance.
 
-## Applications and Examples
+## Applications
 
 Backpropagation is the driving force behind many modern AI applications. From the facial recognition systems in smartphones to language translation services, the algorithm’s ability to train complex neural networks has led to significant breakthroughs in numerous fields.
 
