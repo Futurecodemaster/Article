@@ -91,6 +91,16 @@ Now, let's break down the steps of backpropagation:
 
 ## This a very simple example of a neural network with one input layer, one hidden layer, and one output layer
 
+![Backpropagation Example](https://github.com/Futurecodemaster/Article/blob/main/backpropogation2.png)
+
+In this diagram:
+
+- The input neuron `(x)` with a value of `0.05 ` feeds into two hidden neurons `h1` and `h2` with weights `w1 (0.15)`, `w2 (0.20)` and biases `b1 (0.35)` ,  `b2 (0.35)`.     
+- The hidden neurons then connect to the output neuron `(y)` with weights `w3 (0.25)` and `w4 (0.30)`.    
+- The output is compared to the target value `0.01` to calculate the loss `L`.   
+- The loss is then backpropagated to update the weights `w1, w2, w3, w4`.     
+
+
 ### Neural Network Structure
 1. Input Layer: 1 neuron $(x)$
 2. Hidden Layer: 2 neurons $(h1, h2)$
