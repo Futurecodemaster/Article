@@ -90,4 +90,8 @@ from tensorflow.keras.optimizers import Adam
 
 **Adam:** An optimizer in Keras, a variant of the gradient descent algorithm, known for its effectiveness in practice.
 
+X = [[0.1, 0.2], [0.2, 0.2], [0.3, 0.4], [0.4, 0.5]]
+y = [[0.3], [0.4], [0.7], [0.9]]
+
+
 
