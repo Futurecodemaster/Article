@@ -75,12 +75,12 @@ Backpropagation is the driving force behind many modern AI applications. From th
 
 # An example demonstrating a simple neural network trained on a hypothetical dataset:
 
+```python
 import tensorflow as tf
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
-
-
+```
 
 **TensorFlow:** A powerful library for numerical computation, particularly well-suited for large-scale machine learning.
 
