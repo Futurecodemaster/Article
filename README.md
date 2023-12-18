@@ -187,7 +187,13 @@ print("Weights after training:", weights)
 **Learned Weights:** 
 - These weights are what the model has learned during training.
 
-The code works by first setting up a simple neural network architecture with one hidden layer and one output layer. It then feeds the sample data X and y through this network. During training, the backpropagation algorithm adjusts the weights of the network to minimize the difference between the predicted outputs and the actual values (y). The output printed at the end shows the final learned weights in the first layer after the training process.
+
+```
+[[-0.123456, 0.789101, -0.112233, 0.445566, -0.778899],
+ [0.334455, -0.667788, 0.991122, -0.334455, 0.667788]]
+```
+
+The code works by first setting up a simple neural network architecture with one hidden layer and one output layer. It then feeds the sample data 'X' and 'Y' through this network. During training, the backpropagation algorithm adjusts the weights of the network to minimize the difference between the predicted outputs and the actual values '(y)'. The output printed at the end shows the final learned weights in the first layer after the training process.
 
 
 
