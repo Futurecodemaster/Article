@@ -25,29 +25,29 @@ Now, let's break down the steps of backpropagation:
    - Each layer's output is computed using current weights, biases, and activation functions.
    - The process culminates in the final output.
 
-   For a given layer \((l)\), the output \(y^{(l)}\) can be represented as:
+   For a given layer ${(l)}$, the output $y^{(l)}$ can be represented as:
 
-   \[ y^{(l)} = f(W^{(l)} \cdot x^{(l)} + b^{(l)}) \]
+    $y^{(l)} = f(W^{(l)} \cdot x^{(l)} + b^{(l)})$
 
-   Where \(W^{(l)}\) are the weights of layer \((l)\), \(x^{(l)}\) is the input to layer \((l)\), \(b^{(l)}\) are the biases of layer \((l)\), and \(f\) is the activation function (e.g., ReLU, sigmoid).
+   Where $(W^{(l)}$ are the weights of layer $(l)$, $x^{(l)}$ is the input to layer $(l)$, $b^{(l)}$ are the biases of layer $(l)$, and $f$ is the activation function (e.g., ReLU, sigmoid).
 
 2. **Compute Loss**:
-   - After the final output is produced (let's call it \(\hat{y}\)) it's compared against the actual target values \(y\) using a loss function \(L\). The choice of loss function depends on the task (e.g., Mean Squared Error for regression, Cross-Entropy for classification).
+   - After the final output is produced (let's call it $\hat{y}$) it's compared against the actual target values $y$ using a loss function $L$. The choice of loss function depends on the task (e.g., Mean Squared Error for regression, Cross-Entropy for classification).
 
    For regression, Mean Squared Error (MSE) is often used:
 
-   \[ L(\hat{y}, y) = \frac{1}{n} \sum (\hat{y} - y)^2 \]
+   $L(\hat{y}, y) = \frac{1}{n} \sum (\hat{y} - y)^2$
 
-   Where \(N\) is the number of samples.
+   Where $N:$ is the number of samples.
 
 3. **Backward Pass (Backpropagation)**:
    - Step 1: Compute the gradient of the loss function with respect to each weight. This involves applying the chain rule of calculus, as the loss function is a composite function of the weights via the network's layers and activation functions.
    - Step 2: Partial derivatives are computed backward from the output layer to the input layer, hence the name "backpropagation."
    - Step 3: The gradients tell us the direction in which the loss function is increasing. To minimize the loss, we need to adjust the weights in the opposite direction.
 
-   For a weight \(W_{ij}^{(l)}\) in layer \((l)\), the partial derivative of the loss \(L\) with respect to that weight is:
+   For a weight $W_{ij}^{(l)}$ in layer $(l)$, the partial derivative of the loss $L$ with respect to that weight is:
 
-   \[ \frac{\partial L}{\partial W_{ij}^{(l)}} \]
+   $\frac{\partial L}{\partial W_{ij}^{(l)}}$
 
    The chain rule allows us to express this derivative in terms of derivatives of the output of each layer and the derivatives of the activation functions. For a simple network with a single hidden layer, this might look like:
 
