@@ -90,8 +90,79 @@ from tensorflow.keras.optimizers import Adam
 
 **Adam:** An optimizer in Keras, a variant of the gradient descent algorithm, known for its effectiveness in practice.
 
+
+```
 X = [[0.1, 0.2], [0.2, 0.2], [0.3, 0.4], [0.4, 0.5]]
 y = [[0.3], [0.4], [0.7], [0.9]]
+```
+
+**X and y are sample datasets.** 
+- **X** represents the input features.
+- **y** represents the target values.
+
+*Note: This data is simplistic and for demonstration purposes only.*
+
+```
+model = Sequential([
+    Dense(5, input_shape=(2,), activation='relu'),
+    Dense(1, activation='linear')
+])
+```
+
+**Sequential Model:** 
+- We create a sequential model, which allows us to build a model layer by layer.
+
+**First Dense Layer:** 
+- This is the first hidden layer. 
+- It has 5 neurons (`Dense(5)`), and it expects input with 2 features (`input_shape=(2,)`). 
+- The activation function is ReLU (Rectified Linear Unit).
+
+**Second Dense Layer:** 
+- This is the output layer with a single neuron (since we are predicting a single value). 
+- The activation function is linear.
+
+```
+model.compile(optimizer=Adam(learning_rate=0.01), loss='mean_squared_error')
+
+```
+
+**Compile:** 
+- This prepares the model for training. We specify the optimizer and the loss function.
+
+**Optimizer:** 
+- Adam optimizer is used with a learning rate of 0.01. 
+- The optimizer's role is to adjust the weights of the network to minimize the loss.
+
+**Loss Function:** 
+- Mean Squared Error (MSE) is used as the loss function, suitable for regression problems.
+
+```
+model.fit(X, y, epochs=100, verbose=0)
+
+```
+
+**Fit:** 
+- This function trains the model for a fixed number of epochs (iterations on a dataset).
+
+**Epochs:** 
+- We train the model for 100 epochs. 
+- In each epoch, the model iterates over the entire dataset, and the optimizer adjusts the weights using backpropagation.
+
+**verbose=0:** 
+- This simply means no training log is shown during training.
+
+```
+weights, biases = model.layers[0].get_weights()
+print("Weights after training:", weights)
+
+```
+
+**After training:** 
+- We extract the weights of the first layer to see how they have been adjusted.
+
+**Learned Weights:** 
+- These weights are what the model has learned during training.
+
 
 
 
