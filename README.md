@@ -73,10 +73,19 @@ Since its inception, various improvements have been made to the basic backpropag
 
 Backpropagation is the driving force behind many modern AI applications. From the facial recognition systems in smartphones to language translation services, the algorithm’s ability to train complex neural networks has led to significant breakthroughs in numerous fields.
 
-
+# An example demonstrating a simple neural network trained on a hypothetical dataset:
 
 import tensorflow as tf
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
+
+**TensorFlow:** A powerful library for numerical computation, particularly well-suited for large-scale machine learning.
+
+**Dense:** A layer module in Keras (part of TensorFlow) that represents a fully connected neural network layer.
+
+**Sequential:** A Keras model that represents a linear stack of layers.
+
+**Adam:** An optimizer in Keras, a variant of the gradient descent algorithm, known for its effectiveness in practice.
+
 
