@@ -30,7 +30,7 @@ $b^{(l)}$: Biases of layer ${(l)}$
 
 $f$: Activation function (e.g., ReLU, sigmoid)  
 
-3.	Compute Loss:
+2.	Compute Loss:
 After the final output is produced (let's call it $\hat{y}$) it's compared against the actual target values $y$ using a loss function $L$. The choice of loss function depends on the task (e.g., Mean Squared Error for regression, Cross-Entropy for classification).
 
 In a regression task, the Mean Squared Error (MSE) can be used:
@@ -40,13 +40,10 @@ $L(\hat{y}, y) = \frac{1}{n} \sum (\hat{y} - y)^2$
 $N$: Number of samples 
 
 
-4.	Backward Pass (Backpropagation):
+3.	Backward Pass (Backpropagation):
 •	Step 1: Compute the gradient of the loss function with respect to each weight. This involves applying the chain rule of calculus, as the loss function is a composite function of the weights via the network's layers and activation functions.
 •	Step 2: Partial derivatives are computed backward from the output layer to the input layer, hence the name "backpropagation."
 •	Step 3: The gradients tell us the direction in which the loss function is increasing. To minimize the loss, we need to adjust the weights in the opposite direction.
-5.	Weight Update:
-•	The weights are updated by subtracting a fraction (defined by the learning rate) of the gradient.
-•	This process is repeated for many iterations (epochs) over the training dataset.
 
 For a weight $W_{ij}^{(l)}$ in layer ${(l)}$ , the partial derivative of the loss $L$ with respect to that weight is:
 
@@ -62,6 +59,16 @@ $\frac{\partial \hat{y}}{\partial y^{(hidden)}}:$ Gradient of the output layer w
 
 $\frac{\partial y^{(hidden)}}{\partial W_{ij}^{(hidden)}}:$ Gradient of the hidden layer's output with respect to its weights.
 
+
+4.	Weight Update:
+•	The weights are updated by subtracting a fraction (defined by the learning rate) of the gradient.
+•	This process is repeated for many iterations (epochs) over the training dataset.
+
+The update rule is generally:
+
+$W_{new} = W_{old} - \alpha \frac{\partial L}{\partial W}$
+
+$- \alpha$: Learning rate, a small positive number that controls the size of the weight updates.
 
 
 
