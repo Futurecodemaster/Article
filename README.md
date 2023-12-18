@@ -89,46 +89,40 @@ Now, let's break down the steps of backpropagation:
 
    Where $\alpha:$ is the learning rate, a small positive number that controls the size of the weight updates.
 
-## Improvements
+## This a very simple example of a neural network with one input layer, one hidden layer, and one output layer
 
-Since its inception, various improvements have been made to the basic backpropagation algorithm. Stochastic gradient descent, for example, updates weights using a subset of data, enhancing efficiency and convergence. Other notable advancements include adaptive learning rate techniques like Adam and RMSprop, which adjust the learning rate during training for better performance.
-
-## Applications
-
-Backpropagation is the driving force behind many modern AI applications. From the facial recognition systems in smartphones to language translation services, the algorithm’s ability to train complex neural networks has led to significant breakthroughs in numerous fields.
-
-# Neural Network Structure
+### Neural Network Structure
 1. Input Layer: 1 neuron $(x)$
 2. Hidden Layer: 2 neurons $(h1, h2)$
 3. Output Layer: 1 neuron $(y)$
 
-## Initial Weights and Biases
+### Initial Weights and Biases
 - Weights: $w1 = 0.15, w2 = 0.20, w3 = 0.25, w4 = 0.30$
 - Biases: $b1 = 0.35, b2 = 0.35, b3 = 0.60$
 
-## Activation Function
+### Activation Function
 We'll use the sigmoid function: $\sigma(z) = \frac{1}{1 + e^{-z}}$
 
-## Input and Target Output
+### Input and Target Output
 - Input $(x): 0.05$
 - Target Output: $0.01$
 
-## Forward Pass
-1. Hidden Layer Calculations:
+### Forward Pass
+1. Hidden Layer:
    - $h1 = \sigma(w1 \cdot x + b1)= σ(0.15⋅0.05+0.35) ≈ 0.588$
    - $h2 = \sigma(w2 \cdot x + b2) = σ(w2⋅x+b2)=σ(0.20⋅0.05+0.35) ≈ 0.589$
 
-2. Output Layer Calculation:
+2. Output Layer:
    - $y = \sigma(w3 \cdot h1 + w4 \cdot h2 + b3) = σ(w3⋅h1+w4⋅h2+b3)$
    - $y=σ(0.25⋅h1+0.30⋅h2+0.60)$
    - $y=σ(0.25⋅0.588+0.30⋅0.589+0.60)≈σ(0.7745)≈0.684$
 
-## Loss Calculation
+### Loss Calculation
 Using Mean Squared Error (MSE):
 - $L = \frac{1}{2}(target - y)^2$
 - $= \frac{1}{2}(0.01 – 0.684)^2 ≈0.227$
 
-## Backward Pass (Backpropagation)
+### Backward Pass (Backpropagation)
 To update the weights, we need to calculate the gradient of the loss with respect to each weight. This involves applying the chain rule for derivatives.
 
 1. Calculate Gradient of Loss w.r.t Weights:
@@ -239,6 +233,14 @@ print("Weights after training:", weights)
 ```
 
 Basically the code works by first setting up a simple neural network architecture with one hidden layer and one output layer. It then feeds the sample data X and Y through this network. During training, the backpropagation algorithm adjusts the weights of the network to minimize the difference between the predicted outputs and the actual values (y). The output printed at the end shows the final learned weights in the first layer after the training process.
+
+## Improvements
+
+Since its inception, various improvements have been made to the basic backpropagation algorithm. Stochastic gradient descent, for example, updates weights using a subset of data, enhancing efficiency and convergence. Other notable advancements include adaptive learning rate techniques like Adam and RMSprop, which adjust the learning rate during training for better performance.
+
+## Applications
+
+Backpropagation is the driving force behind many modern AI applications. From the facial recognition systems in smartphones to language translation services, the algorithm’s ability to train complex neural networks has led to significant breakthroughs in numerous fields.
 
 
 # References:
