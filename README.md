@@ -16,8 +16,6 @@ The concept of backpropagation has been around since the 1970s, but it was the s
 
 Partial derivatives quantify how a slight change in a weight affects the loss. Understanding this relationship is key to directing weight adjustments for loss reduction.
 
-![Backpropagation](/backpropagation.png)
-
 **The diagram I created illustrates the backpropagation process in a neural network.**
 
 **Input Layer:** This is the first layer of the neural network where the input data is fed into the system. Each neuron in this layer represents a feature of the input data.
