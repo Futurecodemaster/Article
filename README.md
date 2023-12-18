@@ -56,7 +56,7 @@ The chain rule allows us to express this derivative in terms of derivatives of t
 
 $\frac{\partial L}{\partial W_{ij}^{(hidden)}} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial y^{(hidden)}} \cdot \frac{\partial y^{(hidden)}}{\partial W_{ij}^{(hidden)}}$
 
-\frac{\partial L}{\partial \hat{y}} \cdot Gradient of loss with respect to the network's output.
+$\frac{\partial L}{\partial \hat{y}} \cdot$ Gradient of loss with respect to the network's output.
 
 
 
