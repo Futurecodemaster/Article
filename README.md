@@ -196,6 +196,10 @@ print("Weights after training:", weights)
 Basically the code works by first setting up a simple neural network architecture with one hidden layer and one output layer. It then feeds the sample data X and Y through this network. During training, the backpropagation algorithm adjusts the weights of the network to minimize the difference between the predicted outputs and the actual values (y). The output printed at the end shows the final learned weights in the first layer after the training process.
 
 
+References:
+
+https://hmkcode.com/ai/backpropagation-step-by-step/
+
 
 
 
