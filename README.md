@@ -103,15 +103,15 @@ Backpropagation is the driving force behind many modern AI applications. From th
 3. Output Layer: 1 neuron (y)
 
 ## Initial Weights and Biases
-- Weights: w1 = 0.15, w2 = 0.20, w3 = 0.25, w4 = 0.30
-- Biases: b1 = 0.35, b2 = 0.35, b3 = 0.60
+- Weights: $w1 = 0.15, w2 = 0.20, w3 = 0.25, w4 = 0.30$
+- Biases: $b1 = 0.35, b2 = 0.35, b3 = 0.60$
 
 ## Activation Function
 We'll use the sigmoid function: $\sigma(z) = \frac{1}{1 + e^{-z}}$
 
 ## Input and Target Output
-- Input (x): 0.05
-- Target Output: 0.01
+- Input $(x): 0.05$
+- Target Output: $0.01$
 
 ## Forward Pass
 1. Hidden Layer Calculations:
