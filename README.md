@@ -52,6 +52,13 @@ For a weight $W_{ij}^{(l)}$ in layer ${(l)}$ , the partial derivative of the los
 
 $\frac{\partial L}{\partial W_{ij}^{(l)}}$
 
+The chain rule allows us to express this derivative in terms of derivatives of the output of each layer and the derivatives of the activation functions. For a simple network with a single hidden layer, this might look like:
+
+$\frac{\partial L}{\partial W_{ij}^{(hidden)}} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial y^{(hidden)}} \cdot \frac{\partial y^{(hidden)}}{\partial W_{ij}^{(hidden)}}$
+
+\frac{\partial L}{\partial \hat{y}} \cdot Gradient of loss with respect to the network's output.
+
+
 
 
 Forward Pass
