@@ -18,7 +18,7 @@ Now, let's break down the steps of backpropagation:
 •	The output of each layer is calculated based on the current weights and activation functions.  
 •	This process continues until the final output is produced.  
 
-For a given layer ${(l)}$, the output $y^{(l)}$ can be represented as:
+For a given layer ${(l)}$, the output $y^{l}$ can be represented as:
 
 $$y^{(l)} = f(W^{(l)} \cdot x^{(l)} + b^{(l)})$$   
 
