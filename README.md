@@ -68,7 +68,7 @@ The update rule is generally:
 
 $W_{new} = W_{old} - \alpha \frac{\partial L}{\partial W}$
 
-$- \alpha$: Learning rate, a small positive number that controls the size of the weight updates.
+$\alpha$: Learning rate, a small positive number that controls the size of the weight updates.
 
 
 
