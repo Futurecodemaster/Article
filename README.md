@@ -187,7 +187,7 @@ print("Weights after training:", weights)
 **Learned Weights:** 
 - These weights are what the model has learned during training.
 
-
+## Output:
 ```
 [[-0.123456, 0.789101, -0.112233, 0.445566, -0.778899],
  [0.334455, -0.667788, 0.991122, -0.334455, 0.667788]]
