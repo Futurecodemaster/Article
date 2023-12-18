@@ -72,3 +72,11 @@ Since its inception, various improvements have been made to the basic backpropag
 ## Applications and Examples
 
 Backpropagation is the driving force behind many modern AI applications. From the facial recognition systems in smartphones to language translation services, the algorithm’s ability to train complex neural networks has led to significant breakthroughs in numerous fields.
+
+
+```python
+import tensorflow as tf
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.optimizers import Adam
+
