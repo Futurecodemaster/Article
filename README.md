@@ -51,9 +51,9 @@ Now, let's break down the steps of backpropagation:
 
    The chain rule allows us to express this derivative in terms of derivatives of the output of each layer and the derivatives of the activation functions. For a simple network with a single hidden layer, this might look like:
 
-   \[ \frac{\partial L}{\partial W_{ij}^{(hidden)}} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial y^{(hidden)}} \cdot \frac{\partial y^{(hidden)}}{\partial W_{ij}^{(hidden)}} \]
+   $\frac{\partial L}{\partial W_{ij}^{(hidden)}} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial y^{(hidden)}} \cdot \frac{\partial y^{(hidden)}}{\partial W_{ij}^{(hidden)}}$
 
-   Where \(\frac{\partial L}{\partial \hat{y}}\) is the gradient of loss with respect to the network's output, \(\frac{\partial \hat{y}}{\partial y^{(hidden)}}\) is the gradient of the output layer with respect to the output of the hidden layer, and \(\frac{\partial y^{(hidden)}}{\partial W_{ij}^{(hidden)}}\) is the gradient of the hidden layer's output with respect to its weights.
+   Where $\frac{\partial L}{\partial \hat{y}}$ is the gradient of loss with respect to the network's output, $\frac{\partial \hat{y}}{\partial y^{(hidden)}}$ is the gradient of the output layer with respect to the output of the hidden layer, and $\frac{\partial y^{(hidden)}}{\partial W_{ij}^{(hidden)}}$ is the gradient of the hidden layer's output with respect to its weights.
 
 4. **Weight Update**:
    - The weights are updated by subtracting a fraction (defined by the learning rate) of the gradient.
@@ -61,9 +61,9 @@ Now, let's break down the steps of backpropagation:
 
    The update rule is generally:
 
-   \[ W_{new} = W_{old} - \alpha \frac{\partial L}{\partial W} \]
+   $W_{new} = W_{old} - \alpha \frac{\partial L}{\partial W}$
 
-   Where \(\alpha\) is the learning rate, a small positive number that controls the size of the weight updates.
+   Where $\alpha:$ is the learning rate, a small positive number that controls the size of the weight updates.
 
 ## Variants and Improvements
 
