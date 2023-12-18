@@ -71,9 +71,3 @@ $W_{new} = W_{old} - \alpha \frac{\partial L}{\partial W}$
 $\alpha$: Learning rate, a small positive number that controls the size of the weight updates.
 
 
-
-
-Forward Pass
-In this phase, the input data is fed into the neural network. The process involves:
-1.	Layer Calculations: Each layer of the network computes its output based on the inputs and the current weights. Mathematically, for a layer �l, the output �(�)y(l) is calculated as $y^{(l)} = f(W^{(l)} \cdot x^{(l)} + b^{(l)})$
-
