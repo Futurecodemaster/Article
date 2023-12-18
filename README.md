@@ -31,7 +31,15 @@ $b^{(l)}$: Biases of layer ${(l)}$
 $f$: Activation function (e.g., ReLU, sigmoid)  
 
 3.	Compute Loss:
-•	The loss is calculated using the loss function, comparing the network's output to the actual target value.
+After the final output is produced (let's call it $\hat{y}$) it's compared against the actual target values $y$ using a loss function $L$. The choice of loss function depends on the task (e.g., Mean Squared Error for regression, Cross-Entropy for classification).
+
+In a regression task, the Mean Squared Error (MSE) can be used:
+
+$L(\hat{y}, y) = \frac{1}{n} \sum (\hat{y} - y)^2$
+
+$N$: Number of samples 
+
+
 4.	Backward Pass (Backpropagation):
 •	Step 1: Compute the gradient of the loss function with respect to each weight. This involves applying the chain rule of calculus, as the loss function is a composite function of the weights via the network's layers and activation functions.
 •	Step 2: Partial derivatives are computed backward from the output layer to the input layer, hence the name "backpropagation."
