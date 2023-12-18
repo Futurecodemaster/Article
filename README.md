@@ -115,13 +115,13 @@ We'll use the sigmoid function: $\sigma(z) = \frac{1}{1 + e^{-z}}$
 
 ## Forward Pass
 1. Hidden Layer Calculations:
-   - $h1 = \sigma(w1 \cdot x + b1)=$ σ(0.15⋅0.05+0.35) ≈ 0.588
-   - $h2 = \sigma(w2 \cdot x + b2)$ = σ(w2⋅x+b2)=σ(0.20⋅0.05+0.35) ≈ 0.589
+   - $h1 = \sigma(w1 \cdot x + b1)= σ(0.15⋅0.05+0.35) ≈ 0.588$
+   - $h2 = \sigma(w2 \cdot x + b2) = σ(w2⋅x+b2)=σ(0.20⋅0.05+0.35) ≈ 0.589$
 
 2. Output Layer Calculation:
-   - $y = \sigma(w3 \cdot h1 + w4 \cdot h2 + b3)$ = σ(w3⋅h1+w4⋅h2+b3)
-   - y=σ(0.25⋅h1+0.30⋅h2+0.60)
-   - y=σ(0.25⋅0.588+0.30⋅0.589+0.60)≈σ(0.7745)≈0.684
+   - $y = \sigma(w3 \cdot h1 + w4 \cdot h2 + b3) = σ(w3⋅h1+w4⋅h2+b3)$
+   - $y=σ(0.25⋅h1+0.30⋅h2+0.60)$
+   - $y=σ(0.25⋅0.588+0.30⋅0.589+0.60)≈σ(0.7745)≈0.684$
 
 ## Loss Calculation
 Using Mean Squared Error (MSE):
