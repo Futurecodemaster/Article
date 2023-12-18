@@ -133,8 +133,8 @@ To update the weights, we need to calculate the gradient of the loss with respec
 
 1. Calculate Gradient of Loss w.r.t Weights:
    - For example, $\frac{\partial L}{\partial w3}$ is the rate of change of loss with respect to the weight w3.
-   - $ \frac{\partial L}{\partial w3} = \frac{\partial L}{\partial y} \cdot \frac{\partial h1}{\partial w3}$
-   - $ \frac{\partial L}{\partial y} =$ −(target−y)=−(0.01−0.684)≈0.674
+   - $\frac{\partial L}{\partial w3} = \frac{\partial L}{\partial y} \cdot \frac{\partial h1}{\partial w3}$
+   - $\frac{\partial L}{\partial y} =$ −(target−y)=−(0.01−0.684)≈0.674
    - $\frac{\partial y}{\partial w3} =$ h1⋅y⋅(1−y)≈0.588⋅0.684⋅(1−0.684)
    - $\frac{\partial L}{\partial w3}$ ≈0.674⋅0.588⋅0.684⋅(1−0.684)
 
