@@ -17,13 +17,25 @@ Now, let's break down the steps of backpropagation:
 •	Data is passed through the network layer by layer.
 •	The output of each layer is calculated based on the current weights and activation functions.
 •	This process continues until the final output is produced.
-2.	Compute Loss:
+
+For a given layer {(l)}, the output y^{(l)} can be represented as:
+
+$$y^{(l)} = f(W^{(l)} \cdot x^{(l)} + b^{(l)})$$
+
+$W^{(l)}$: Weights of layer ${(l)}$
+$x^{(l)}$: Input to layer ${(l)}$
+$b^{(l)}$: Biases of layer ${(l)}$
+$f$: Activation function (e.g., ReLU, sigmoid)
+![image](https://github.com/Futurecodemaster/Article/assets/25801618/277d2ce0-8a85-4fad-9699-e8f91fce6e49)
+
+
+3.	Compute Loss:
 •	The loss is calculated using the loss function, comparing the network's output to the actual target value.
-3.	Backward Pass (Backpropagation):
+4.	Backward Pass (Backpropagation):
 •	Step 1: Compute the gradient of the loss function with respect to each weight. This involves applying the chain rule of calculus, as the loss function is a composite function of the weights via the network's layers and activation functions.
 •	Step 2: Partial derivatives are computed backward from the output layer to the input layer, hence the name "backpropagation."
 •	Step 3: The gradients tell us the direction in which the loss function is increasing. To minimize the loss, we need to adjust the weights in the opposite direction.
-4.	Weight Update:
+5.	Weight Update:
 •	The weights are updated by subtracting a fraction (defined by the learning rate) of the gradient.
 •	This process is repeated for many iterations (epochs) over the training dataset.
 
