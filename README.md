@@ -16,6 +16,30 @@ The concept of backpropagation has been around since the 1970s, but it was the s
 
 Partial derivatives quantify how a slight change in a weight affects the loss. Understanding this relationship is key to directing weight adjustments for loss reduction.
 
+![Backpropagation](/backpropagation.png)
+
+**The diagram I created illustrates the backpropagation process in a neural network.**
+
+**Input Layer:** This is the first layer of the neural network where the input data is fed into the system. Each neuron in this layer represents a feature of the input data.
+
+**Activations to Hidden Layer:** The data from the input layer is passed to the hidden layer through connections. Each connection has a weight and possibly a bias. The data is transformed in the hidden layer neurons by a weighted sum followed by a non-linear activation function.
+
+**Hidden Layer:** This layer processes the inputs received from the input layer and passes the output to the next layer. The hidden layer can perform complex computations with the data.
+
+**Activations to Output Layer:** Similar to the previous step, the output from the hidden layer is passed to the output layer. Again, this involves weighted sums and activation functions.
+
+**Output Layer:** This layer produces the final output of the neural network. The way it's structured and the functions it uses depend on the specific task (e.g., regression, classification).
+
+**Calculate Loss:** After the forward pass (from input to output), the network calculates the loss (or error). The loss function measures how far the network's output is from the expected result.
+
+**Backpropagate Error:** This is where backpropagation starts. The error calculated is propagated back through the network. This involves calculating the gradient of the loss function with respect to each weight by the chain rule.
+
+**Update Weights (Hidden Layer):** Based on the error received, the weights between the hidden layer and the output layer are adjusted. This is typically done using a gradient descent optimization algorithm.
+
+**Backpropagate Error to Input Layer:** The error is further propagated back to the connections between the input and hidden layers.
+
+**Update Weights (Input Layer):** Finally, the weights between the input layer and the hidden layer are adjusted based on the error.
+
 ### The Process of Backpropagation
 
 Now, let's break down the steps of backpropagation:
@@ -164,8 +188,6 @@ print("Weights after training:", weights)
 - These weights are what the model has learned during training.
 
 The code works by first setting up a simple neural network architecture with one hidden layer and one output layer. It then feeds the sample data X and y through this network. During training, the backpropagation algorithm adjusts the weights of the network to minimize the difference between the predicted outputs and the actual values (y). The output printed at the end shows the final learned weights in the first layer after the training process.
-
-![Backpropagation](/backpropagation.png)
 
 
 
